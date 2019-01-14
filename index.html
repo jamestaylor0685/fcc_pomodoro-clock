@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title id="tab-display">FCC-Pomodoro-Clock</title>
+        <link type="text/css" rel="stylesheet" href="css/pomodoro.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    </head>
+    <body id="splash">
+        <header>
+            <h1>Pomodoro Clock</h1>
+        </header>
+        <div class="clockBox" id="clockContain">
+            <div class="timerOption" id="breakSet">
+                <input type="button" class="button" id="breakMinus" value="-"/>
+                <input type="textbox" class="displayBox" id="breakBox" size="1" value="5" readonly="readonly"/>
+                <input type="button" class="button" id="breakPlus" value="+"/>
+            </div>
+            <div class="timerOption" id="workSet">
+                <input type="button" class="button" id="timerMinus" value="-"/>
+                <input type="textbox" class="displayBox" id="timeBox" size="1" value="25" readonly="readonly"/>
+                <input type="button" class="button" id="timerPlus" value="+"/>
+            </div>
+            <div class="clockFace" id="clockFace">
+                <div class="clockOption" id="infoBox"></div>
+                <div class="clockOption" id="clockDisplay"></div>
+                <div class="clockOption" id="pause-reset">
+                    <input type="button" class="button start" id="startReset" value="Start/Reset"/>
+                </div>
+            </div>
+            <div class="pauseOption"><input type="button" class="button start" id="pauseResume" value="Pause/Resume"/></div>
+        </div>
+        <script src="js/pomodoro.js"></script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+body {
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  background-color: #CCCCCC;
+}
+header {
+  background-color: #204056;
+  padding: 15px;
+  color: #31A496;
+  text-shadow: 1px 1px #000000;
+}
+.clockBox {
+  height: 500px;
+  width: 500px;
+  background-color: #204056;
+  margin: 100px auto;
+  border-radius: 15px;
+}
+.timerOption {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  top: 15px;
+  background-color: #31A496;
+  border-radius: 5px;
+}
+.displayBox {
+  border-radius: 5px;
+  background-color: #31A496;
+  border: none;
+  text-align: center;
+  font-size: 1.5em;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+}
+.button {
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 30px;
+  font-size: 1.5em;
+  box-shadow: 0 3px #999;
+}
+.button:hover {
+  background-color: #D0D0D0;
+}
+.button:active {
+  background-color: #D0D0D0;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+.button:focus {
+  outline-color: transparent;
+}
+.start {
+  width: 190px;
+  height: 40px;
+  font-size: 1em;
+}
+.clockFace {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  box-shadow: 3px 3px #000;
+  background-color: #31A496;
+  top: 10%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.clockOption {
+  position: relative;
+  margin-bottom: 5px;
+  left: 50%;
+  top: 32%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2em;
+  border-radius: 5px;
+}
+.pauseOption {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  top: 70px;
+}
+.alert {
+  animation-name: blink;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 16;
+}
+@keyframes blink {
+  from{
+    background-color: #CCCCCC;
+  }
+  to {
+    background-color: #FF0000;
+  }
+}
